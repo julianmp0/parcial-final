@@ -44,22 +44,23 @@ La aplicación está desarrollada con **Spring Boot** para el backend y utiliza 
 
 ### Configuración del Proyecto
 
-1. **Descargar el Archivo ZIP**
-    - Recibirás un archivo ZIP que contiene todo el proyecto.
-    - Descomprime el archivo en tu sistema.
-
+1. **Clonar el Repositorio**
+      ```bash
+    git clone https://github.com/julianmp0/parcial-final
+    cd parcial-final
+      ```
 2. **Instalar Dependencias**
-    - Desde la raíz del proyecto, ejecuta el siguiente comando para descargar las dependencias:
+   Desde la raíz del proyecto, ejecuta el siguiente comando para descargar las dependencias:
       ```bash
       ./gradlew build
       ```
 
-4. **Ejecutar la Aplicación**
-    - Inicia el servidor:
+3. **Ejecutar la Aplicación**
+   Inicia el servidor:
       ```bash
       ./gradlew bootRun
       ```
-    - Accede a la aplicación en [http://localhost:8080](http://localhost:8080).
+4. **Acceder la Aplicación**  [http://localhost:8080](http://localhost:8080).
 ---
 ## **Tecnologías Utilizadas**
 
