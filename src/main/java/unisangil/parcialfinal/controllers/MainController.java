@@ -20,8 +20,11 @@ public class MainController {
     @GetMapping(path = "")
     public String home(Model model){
 
-        var transactions = transactionsService.getAllIncomes();
         model.addAttribute("transaction", new Transaction());
+        model.addAttribute("transactions", transactionsService.getAllTransactions());
+        model.addAttribute("totalIncome", transactionsService.getTotalIncome());
+        model.addAttribute("totalExpense", transactionsService.getTotalExpense());
+        model.addAttribute("totalNet", transactionsService.getTotalNet());
         return "index";
     }
 

@@ -6,7 +6,13 @@ import java.util.List;
 
 public interface TransactionsService {
 
-    public List<Transaction> getAllIncomes();
-
     void saveTransaction(Transaction transaccion);
+
+    List<Transaction> getAllTransactions();
+
+    Double getTotalIncome();
+
+    Double getTotalExpense();
+
+    Double getTotalNet();
 }
